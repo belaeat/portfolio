@@ -1,4 +1,4 @@
-# JS Portfolio Website
+# My Portfolio Website
 
 [🔗Live Demo🔗](https://sajib.vercel.app/)
 
