@@ -11,14 +11,14 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const resumeLink = `https://raw.githubusercontent.com/19sajib/portfolio/main/src/assets/sajib.pdf`
+const resumeLink = `https://raw.githubusercontent.com/belaeat/portfolio/main/src/assets/belaeat.pdf`
 
 
 const Resume = () => {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
-    
+
     setWidth(window.innerWidth);
   }, []);
 
@@ -33,11 +33,12 @@ const Resume = () => {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download Resume
+            <AiOutlineDownload className="text-light" />
+            &nbsp;<span className="text-light">Download Resume</span>
           </Button>
         </Row>
 
+        {/* Showing pdf resume on the webpage */}
         <Row className="resume">
           <Document file={resumeLink} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
@@ -51,8 +52,8 @@ const Resume = () => {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download Resume
+            <AiOutlineDownload className="text-light" />
+            &nbsp;<span className="text-light">Download Resume</span>
           </Button>
         </Row>
       </Container>
