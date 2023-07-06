@@ -1,53 +1,16 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { Container } from "react-bootstrap";
 
 const Footer = () => {
-    let date = new Date();
-    let year = date.getFullYear();
-    return (
-      <Container fluid className="footer">
-        <Row>
-          <Col md="4" className="footer-copywright">
-            <span>Dedicated to creating impactful solutions!</span>
-          </Col>
-          <Col md="4" className="footer-copywright">
-            <span>Copyright © {year} || Md. Belaeat Hossain</span>
-          </Col>
-          <Col md="4" className="footer-body">
-            <ul className="footer-icons">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/belaeat"
-                  style={{ color: "white" }}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="github"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>              
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/belaeat/"
-                  style={{ color: "white" }}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="linkedin"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    );  
+  let date = new Date();
+  let year = date.getFullYear();
+  return (
+    <Container fluid className="footer mx-auto">
+      <span md="4" className="footer-copywright">
+        <span>Copyright © {year} || Md. Belaeat Hossain</span>
+      </span>
+    </Container>
+  );
 }
 
 export default Footer
