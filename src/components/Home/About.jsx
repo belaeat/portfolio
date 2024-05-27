@@ -5,7 +5,6 @@ import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-
 const About = () => {
   return (
     <Container fluid className="home-about-section" id="about">
@@ -16,20 +15,17 @@ const About = () => {
               LET ME <span className="yellow"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Hi, my name is <span className="yellow">Md. Belaeat Hossain </span>
-              and I'm from <span className="yellow"> Dhaka, Bangladesh.</span>
-              <br />
-              <br />
-              I am currently obtaining my Bachelor of Science (B.Sc.) in Chemistry discipline with a great passion for web developments and web technologies.
-              <br />
-              <br />
-              As a
-              <b className="yellow"> Full-Stack </b>developer,
-              I enjoy tackling new challenges and continuously expanding my skillset.
-              <br />
-              <br />
-              I have a passion for working
-              with <b className="yellow">Node.js, MongoDB,</b> and
+              Hi, my name is{" "}
+              <span className="yellow">Md. Belaeat Hossain </span>
+              and I'm from{" "}
+              <span className="yellow">
+                {" "}
+                Dhaka, Bangladesh. Currently residing in Espoo, Finland.
+              </span>
+              As a<b className="yellow"> Full-Stack </b>developer, I enjoy
+              tackling new challenges and continuously expanding my skillset. I
+              have a passion for working with{" "}
+              <b className="yellow">Node.js, MongoDB,</b> and
               <i>
                 <b className="yellow">
                   {" "}
@@ -41,13 +37,11 @@ const About = () => {
                 <b className="yellow"> React.js</b>
               </i>
               <br />
-              <br />
-              I am also interested in building new
+              <br />I am also interested in building new
               <i>
                 <b className="yellow"> Web Technologies and Products</b>
               </i>
               <br />
-
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -60,7 +54,8 @@ const About = () => {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Please don't hesitate to reach out to me and <span className="yellow">connect.</span>
+              Please don't hesitate to reach out to me and{" "}
+              <span className="yellow">connect.</span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -91,7 +86,6 @@ const About = () => {
       </Container>
     </Container>
   );
+};
 
-}
-
-export default About
+export default About;
