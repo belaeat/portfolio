@@ -42,6 +42,7 @@ const Contact = () => {
         <Col md={6} className="c-left">
           <h1>Get in Touch</h1>
           <h1 className="yellow">Contact me</h1>
+          <p className="yellow">Emailing is not working right now.</p>
         </Col>
         <Col md={6} className="c-right">
           <form ref={form} onSubmit={sendEmail}>

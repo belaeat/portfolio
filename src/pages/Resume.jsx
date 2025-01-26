@@ -3,14 +3,14 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import Particle from "../components/Particle";
-import pdf from "../assets/resume.pdf";
+import resume from "../assets/resume-Hossain.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 // Resume updated with portfolio
-const resumeLink = `https://raw.githubusercontent.com/belaeat/portfolio/main/src/assets/resume.pdf`;
+const resumeLink = `https://raw.githubusercontent.com/belaeat/portfolio/main/src/assets/resume-Hossain.pdf`;
 
 const Resume = () => {
   const [width, setWidth] = useState(1200);
@@ -26,7 +26,7 @@ const Resume = () => {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={resume}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -45,7 +45,7 @@ const Resume = () => {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={resume}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >

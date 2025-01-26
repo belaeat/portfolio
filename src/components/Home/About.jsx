@@ -15,12 +15,11 @@ const About = () => {
               LET ME <span className="yellow"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Hi, my name is{" "}
-              <span className="yellow">Md. Belaeat Hossain </span>
+              Hi, my name is <span className="yellow">Md Belaeat Hossain </span>
               and I'm from{" "}
               <span className="yellow">
                 {" "}
-                Dhaka, Bangladesh. Currently residing in Espoo, Finland.
+                Dhaka, Bangladesh. Currently residing in Helsinki, Finland.
               </span>
               As a<b className="yellow"> Full-Stack </b>developer, I enjoy
               tackling new challenges and continuously expanding my skillset. I
