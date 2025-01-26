@@ -1,26 +1,22 @@
-import React from 'react'
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import './Social.css'
+import "./Social.css";
 
 const Social = () => {
   return (
-    <Container style={{ padding: '30px' }}>
+    <Container style={{ padding: "30px" }}>
       <Row>
         <Col md={12} className="contact-social">
-          <div className='contact-text'>
+          <div className="contact-text">
             <h1>FIND ME ON</h1>
             <p>
-              Please don't hesitate to reach out to me and <span className="yellow">connect.</span>
+              Please don't hesitate to reach out to me and{" "}
+              <span className="yellow">connect.</span>
             </p>
           </div>
           <ul className="contact-social-links">
-
             {/* Github */}
             <li className="contact-icons">
               <a
@@ -48,7 +44,7 @@ const Social = () => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default Social
+export default Social;
