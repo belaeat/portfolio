@@ -3,14 +3,14 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import Particle from "../components/Particle";
-import pdf from "../assets/belaeat.pdf";
+import pdf from "../assets/resume.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 // Resume updated with portfolio
-const resumeLink = `https://raw.githubusercontent.com/belaeat/portfolio/main/src/assets/belaeat.pdf`;
+const resumeLink = `https://raw.githubusercontent.com/belaeat/portfolio/main/src/assets/resume.pdf`;
 
 const Resume = () => {
   const [width, setWidth] = useState(1200);
