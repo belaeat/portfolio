@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
-import saucyCulinary from '../assets/projects/saucy.jpg'
-import carPalace from '../assets/projects/car-palace.jpg'
-import mexicanChef from '../assets/projects/mexican-chef.jpg'
+import saucyCulinary from "../assets/projects/saucy.jpg";
+import carPalace from "../assets/projects/car-palace.jpg";
+import mexicanChef from "../assets/projects/mexican-chef.jpg";
 
 const Projects = () => {
   return (
@@ -18,7 +18,6 @@ const Projects = () => {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-
           {/* Project 1: Saucy Culinary School */}
           <Col md={4} className="project-card">
             <ProjectCard
@@ -27,7 +26,7 @@ const Projects = () => {
               title="Saucy Culinary School"
               description="Features: This is a Single Page Application (SPA) built with MERN stack technology. This website has a unique dashboard for admin, instructor and students and has a user management system. It also have payment system. Anyone can make payment with their Card. Students can enroll to a class online. REST API and so on."
               ghLink="https://github.com/belaeat/saucy-culinary-school-client"
-              demoLink="https://saucy-culinary-school.web.app/"
+              demoLink="https://saucy-culinary-school.netlify.app/"
             />
           </Col>
 
@@ -49,7 +48,7 @@ const Projects = () => {
               imgPath={mexicanChef}
               isBlog={false}
               title="Mexican Chef"
-              description="Features: This website is also built on MERN stack technology. This is community to find the country's best chefs. Users can see the recipes and mark them as their favorites. Built a feature-rich website incorporating RESTful API, utilizing ReactJS for frontend interactivity." 
+              description="Features: This website is also built on MERN stack technology. This is community to find the country's best chefs. Users can see the recipes and mark them as their favorites. Built a feature-rich website incorporating RESTful API, utilizing ReactJS for frontend interactivity."
               ghLink="https://github.com/belaeat/mexican-chef-client"
               demoLink="https://eclectic-fudge-38f412.netlify.app/"
             />
@@ -57,7 +56,7 @@ const Projects = () => {
         </Row>
       </Container>
     </Container>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
